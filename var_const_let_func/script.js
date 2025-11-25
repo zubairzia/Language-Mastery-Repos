@@ -25,3 +25,13 @@ function paint() {
 
 paint();
 console.log("outside:", colour);
+
+hoistTest();            // call BEFORE declaration
+
+function hoistTest() {  // old-style declaration
+  console.log("hoisted");
+}
+
+// Now try the same with an arrow function:
+// arrowTest();         // uncomment this line
+const arrowTest = () => console.log("arrow");
