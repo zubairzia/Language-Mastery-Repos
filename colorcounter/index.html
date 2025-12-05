@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Day 1 – Colorful Counter</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 40px; }
+    #number { font-size: 80px; margin: 20px; }
+    button { font-size: 20px; margin: 8px; padding: 10px 20px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <h1>Colorful Counter</h1>
+  <div id="number">0</div>
+  <button onclick="change(-1)">-1</button>
+  <button onclick="change(+1)">+1</button>
+  <button onclick="reset()">Reset</button>
+
+  <script>
+    let count = 0;                       // our memory
+    const out = document.getElementById('number');
+
+    function change(delta) {
+      count += delta;                    // update memory
+      out.textContent = count;           // show on screen
+      // simple color logic
+      out.style.color = count > 0 ? 'seagreen' :
+                        count < 0 ? 'crimson' : 'black';
+    }
+
+    function reset() {
+      count = 0;
+      out.textContent = 0;
+      out.style.color = 'black';
+    }
+  </script>
+
+</body>
+</html>
