@@ -5,3 +5,6 @@ function add(a, b) {
 }
 Arrow function
 const add = (a, b) => a + b;
+Arrow function with one parameter
+const square = x => x * x;
+console.log(square(4)); // 16
