@@ -14,3 +14,7 @@ const greet = (name) => {
   return message;
 };
 console.log(greet("Sam")); // Hello, Sam!
+////////////////////////////////////////
+// Arrow Function Returning An Object
+const object = () => ({Name: "Zubair", Age: 30});
+console.log(object());
