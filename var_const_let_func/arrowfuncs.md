@@ -8,3 +8,9 @@ const add = (a, b) => a + b;
 Arrow function with one parameter
 const square = x => x * x;
 console.log(square(4)); // 16
+Arrow Functions with Muliple lines
+const greet = (name) => {
+  const message = "Hello, " + name + "!";
+  return message;
+};
+console.log(greet("Sam")); // Hello, Sam!
