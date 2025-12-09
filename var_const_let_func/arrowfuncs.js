@@ -36,3 +36,11 @@ console.log(object());
 const Numbers = [1,2,3,4];
 const double = Numbers.map(num => num * 2);
 console.log(double);
+
+///////////////////////////
+// Arrow Function without implicit Return
+const subtract = (a,b) => {
+    const result = a - b;
+    return result;
+}
+console.log(subtract(10,3));
