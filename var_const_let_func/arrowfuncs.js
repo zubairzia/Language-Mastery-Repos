@@ -13,3 +13,26 @@ const yearsUntilRetirement = (birthYeah, firstName) => {
 }
 
 console.log(yearsUntilRetirement(1991, 'Jonas')); console.log(yearsUntilRetirement(1980, 'Bob'));
+////////////////////////////////////////
+const hellosay = () => console.log("Hello World");
+hellosay();
+//
+// Arrow function with one parameter
+const multiply = x => x * x;
+console.log(multiply(4));
+
+//
+// Arrow function with Two parameter
+const add = (a,b) => a + b;
+console.log(add(6,9));
+
+/////////////////////
+// Arrow Function Returning An Object
+const object = () => ({Name: "Zubair", Age: 30});
+console.log(object());
+
+////////////////////////////
+// Arrow Function in Array Method
+const Numbers = [1,2,3,4];
+const double = Numbers.map(num => num * 2);
+console.log(double);
