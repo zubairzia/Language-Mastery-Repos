@@ -83,3 +83,7 @@ Object methods
 Constructors
 You need arguments
 You need your own this
+...........
+Arrow functions:
+Can omit return if there’s only one expression
+Are shorter and more readable for small functions
