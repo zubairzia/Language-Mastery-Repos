@@ -53,3 +53,16 @@ Arrow Function ❌
 const sum = () => {
   console.log(arguments); // ERROR
 };
+
+5. =>
+Constructors (new keyword)
+function Person(name) {
+  this.name = name;
+}
+const p = new Person("Alex");
+..............
+Arrow Function ❌
+const Person = (name) => {
+  this.name = name;
+};
+// ❌ Cannot be used with `new`
