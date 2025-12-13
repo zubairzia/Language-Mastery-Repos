@@ -19,3 +19,16 @@ const user = {
 };
 
 user.greet(); // undefined
+Rule:
+Never use arrow functions as object methods.
+
+3. =>
+this Inside Callbacks
+Regular function (loses this)
+function Timer() {
+  this.seconds = 0;
+
+  setTimeout(function () {
+    console.log(this.seconds); // undefined
+  }, 1000);
+}
