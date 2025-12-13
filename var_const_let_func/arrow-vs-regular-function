@@ -94,3 +94,5 @@ Common Mistakes
 ❌ Using arrow functions as constructors
 ❌ Expecting arrow functions to have arguments
 ❌ Forgetting arrow functions inherit this
+
+Arrow functions are for behavior, regular functions are for objects.
