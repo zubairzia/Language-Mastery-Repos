@@ -32,3 +32,24 @@ function Timer() {
     console.log(this.seconds); // undefined
   }, 1000);
 }
+
+Arrow function (keeps this)
+function Timer() {
+  this.seconds = 0;
+
+  setTimeout(() => {
+    console.log(this.seconds); // 0
+  }, 1000);
+}
+
+4. =>
+arguments Object
+function sum() {
+  console.log(arguments);
+}
+sum(1, 2, 3);
+..............
+Arrow Function ❌
+const sum = () => {
+  console.log(arguments); // ERROR
+};
