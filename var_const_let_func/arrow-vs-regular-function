@@ -96,3 +96,11 @@ Common Mistakes
 ❌ Forgetting arrow functions inherit this
 
 Arrow functions are for behavior, regular functions are for objects.
+
+
+Arrow Functions vs Regular Functions (Conceptual Explanation)
+Function Identity
+
+Regular functions are traditional functions that create their own execution context when called. They behave independently and decide their behavior based on how and where they are invoked.
+
+Arrow functions are lightweight functions designed to behave more like expressions than standalone entities. They do not create many of the internal structures that regular functions do.
