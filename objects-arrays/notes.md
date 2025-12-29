@@ -9,3 +9,6 @@ Arrays
 Objects
 
 They let you combine many atoms into something meaningful.
+Arrays (lists of values)
+
+An array is an ordered list of values.
