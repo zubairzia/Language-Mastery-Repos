@@ -1,3 +1,99 @@
 JavaScript uses objects to group related data together, and arrays are a special kind of object used to store ordered lists.
 For the were-squirrel example, each day’s journal entry is best represented as one object, and all entries together are stored in an array.
 An object is a collection of properties (key–value pairs).
+Creating an object
+let day1 = {
+  squirrel: false,
+  events: ["work", "touched tree", "pizza", "running"]
+};
+
+
+Property names are keys (squirrel, events)
+
+Values can be anything: booleans, strings, arrays, other objects
+
+Accessing properties
+day1.squirrel      // false
+day1.wolf          // undefined (property doesn’t exist)
+
+Adding or changing properties
+day1.wolf = false; // creates a new property
+
+Property name rules
+
+Valid identifiers don’t need quotes
+
+Names with spaces or special characters must be quoted
+
+let descriptions = {
+  work: "Went to work",
+  "touched tree": "Touched a tree"
+};
+
+Objects vs code blocks
+
+{} at the start of a statement → code block
+
+{} anywhere else → object
+
+This rarely causes confusion in practice
+
+Deleting and checking properties
+Deleting a property
+delete anObject.left;
+
+Checking if a property exists
+"left" in anObject   // false
+"right" in anObject  // true
+
+
+⚠️ Important difference
+
+Setting a property to undefined → property still exists
+
+Deleting a property → property is completely gone
+
+Getting object properties
+Object.keys({x: 0, y: 0, z: 2});
+// ["x", "y", "z"]
+
+Copying properties between objects
+Object.assign(objectA, {b: 3, c: 4});
+
+
+Copies properties into an existing object
+
+Overwrites properties with the same name
+
+Arrays
+
+Arrays are objects specialized for ordered data
+
+typeof [] → "object"
+
+Think of them as objects with numbered keys (0, 1, 2, ...)
+
+The journal structure (important takeaway)
+
+The journal is:
+
+An array
+
+Each element is an object
+
+Each object has:
+
+events → array of strings
+
+squirrel → boolean
+
+let journal = [
+  { events: ["work", "touched tree", "pizza"], squirrel: false },
+  { events: ["weekend", "cycling", "beer"], squirrel: true }
+];
+
+Core takeaway
+
+👉 Objects group related data
+👉 Arrays store ordered lists
+👉 Complex data = arrays of objects
